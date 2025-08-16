@@ -1,0 +1,81 @@
+/* index.wxss */
+.container {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.header {
+  padding: 30rpx 0;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: var(--theme-color);
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: var(--light-text);
+  display: block;
+  margin-top: 10rpx;
+}
+
+.list-header {
+  background-color: var(--theme-color);
+  color: white;
+  border-radius: 10rpx 10rpx 0 0;
+  overflow: hidden;
+}
+
+.list-item {
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1rpx solid var(--border-color);
+  align-items: center;
+}
+
+.even {
+  background-color: #fff;
+}
+
+.odd {
+  background-color: #f5f5f5;
+}
+
+.rank {
+  flex: 1;
+  font-weight: bold;
+}
+
+.name {
+  flex: 3;
+}
+
+.code {
+  flex: 2;
+  color: var(--light-text);
+}
+
+.dividend {
+  flex: 2;
+  text-align: right;
+  font-weight: bold;
+  color: #e64340;
+}
+
+.stock-list {
+  height: calc(100vh - 240rpx);
+  background-color: #fff;
+  border-radius: 0 0 10rpx 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: var(--light-text);
+}

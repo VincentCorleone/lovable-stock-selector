@@ -1,0 +1,31 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="header">
+    <text class="title">高股息股票排行榜</text>
+    <text class="subtitle">按股息率从高到低排序</text>
+  </view>
+
+  <view class="list-header">
+    <view class="list-item">
+      <text class="rank">排名</text>
+      <text class="name">股票名称</text>
+      <text class="code">代码</text>
+      <text class="dividend">股息率(%)</text>
+    </view>
+  </view>
+
+  <scroll-view scroll-y class="stock-list">
+    <block wx:for="{{stockData}}" wx:key="id">
+      <view class="list-item {{index % 2 === 0 ? 'even' : 'odd'}}">
+        <text class="rank">{{index + 1}}</text>
+        <text class="name">{{item.name}}</text>
+        <text class="code">{{item.code}}</text>
+        <text class="dividend">{{item.dividend}}</text>
+      </view>
+    </block>
+  </scroll-view>
+
+  <view class="footer">
+    <text>数据仅供参考，不构成投资建议</text>
+  </view>
+</view>
